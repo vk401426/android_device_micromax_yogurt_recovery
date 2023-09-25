@@ -26,7 +26,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(DEVICE_PATH)/recovery/root,recovery/root) \
-    $(DEVICE_PATH)/prebuilt/dtb:dtb.img
+    $(DEVICE_PATH)/prebuilt/dtb.img:dtb.img
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := yogurt
